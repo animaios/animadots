@@ -43,7 +43,7 @@ A carefully crafted dotfiles setup that transforms Hyprland into a modern, cohes
 |---|---|
 | **Super** (alone) | 🪟 hyprshell window overview |
 | **Super + Tab** | ↔️ hyprshell window switch |
-| **Alt + Tab** | ↺ Cycle windows |
+| **Alt + Shift** | 🔤 Switch keyboard layout (en/ru) |
 | **Alt + 1–0, -, =** | Switch to workspace A–L |
 | **Alt + Shift + 1–0, -, =** | Move window to workspace |
 | **Alt + T** | Kitty terminal |

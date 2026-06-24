@@ -26,15 +26,7 @@ hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("floorp"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 
 -- ── Window cycling ───────────────────────────────────────────
-hl.bind("ALT + Tab", function()
-    hl.dispatch(hl.dsp.window.cycle_next())
-    hl.dispatch(hl.dsp.layout("fit active"))
-end)
 
-hl.bind("ALT + SHIFT + Tab", function()
-    hl.dispatch(hl.dsp.window.cycle_next({ next = false }))
-    hl.dispatch(hl.dsp.layout("fit active"))
-end)
 -- ── Screenshots ──────────────────────────────────────────────
 -- Shift+Print: full screen
 hl.bind("SHIFT + Print", hl.dsp.exec_cmd("grim - | tee ~/Pictures/Screenshots/$(date +%Y%m%d_%H%M%S).png | wl-copy --type image/png"))
