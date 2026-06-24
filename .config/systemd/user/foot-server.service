@@ -1,0 +1,14 @@
+[Unit]
+Description=Foot terminal server (daemon mode)
+Documentation=man:foot(1)
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=foot --server
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target
