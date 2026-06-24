@@ -56,6 +56,28 @@ A carefully crafted dotfiles setup that transforms Hyprland into a modern, cohes
 | **Shift + Print** | Full screenshot → clipboard |
 | **Ctrl + Print** | Active window screenshot → clipboard |
 
+
+### 🌐 Keyboard Layouts
+
+Two layouts are pre-configured: **English (US)** and **Russian**. Switch between them with:
+
+| Key | Action |
+|---|---|
+| **Alt + Shift** | 🔄 Toggle between en/ru |
+
+To add or remove layouts, edit `~/.config/hypr/hyprland.lua`:
+```lua
+input = {
+    kb_layout  = "us,ru",   -- comma-separated list of layouts
+    kb_options = "grp:alt_shift_toggle",  -- Alt+Shift to toggle
+}
+```
+
+Common layout codes: `us`, `ru`, `de`, `fr`, `uk`, `jp`, `br`, `il`, `ara`.
+Change `grp:alt_shift_toggle` to any [XKB group switch option](https://wiki.archlinux.org/title/X keyboard extension#Switching_between_keyboard_layouts)
+(e.g. `grp:win_space_toggle` for Win+Space).
+
+
 ### Scrolling Layout Navigation
 
 | Key | Action |
