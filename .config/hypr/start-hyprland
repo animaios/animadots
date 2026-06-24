@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Hyprland launch script — AnimaDots
+# Sets up the environment and starts Hyprland properly.
+
+# Set up XDG and Wayland environment
+export XDG_CURRENT_DESKTOP=Hyprland
+export XDG_SESSION_TYPE=wayland
+export XDG_SESSION_DESKTOP=Hyprland
+
+# Start Hyprland with dbus session
+exec Hyprland "$@"

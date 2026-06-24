@@ -10,5 +10,5 @@ export GOAMD64=v4
 
 # Auto-start Hyprland on tty1 boot (no display manager)
 if test -z "$WAYLAND_DISPLAY" -a "$XDG_VTNR" = "1"
-    exec Hyprland
+    exec ~/.config/hypr/start-hyprland
 end
