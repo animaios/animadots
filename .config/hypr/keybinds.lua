@@ -28,7 +28,6 @@ hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("gtklock"))
 -- ── Window cycling ───────────────────────────────────────────
 hl.bind("ALT + Tab", function()
     hl.dispatch(hl.dsp.window.cycle_next())
-    hl.dispatch(hl.dsp.window.alter_zorder({ mode = "top" }))
     hl.dispatch(hl.dsp.layout("fit active"))
 end)
 
