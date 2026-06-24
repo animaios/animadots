@@ -37,11 +37,11 @@ hl.bind("ALT + SHIFT + Tab", function()
 end)
 -- ── Screenshots ──────────────────────────────────────────────
 -- Shift+Print: full screen
-hl.bind("SHIFT + Print", hl.dsp.exec_cmd("grim ~/Pictures/Screenshots/$(date +%Y%m%d_%H%M%S).png"))
+hl.bind("SHIFT + Print", hl.dsp.exec_cmd("grim - | tee ~/Pictures/Screenshots/$(date +%Y%m%d_%H%M%S).png | wl-copy --type image/png"))
 -- Print: area selection (default)
-hl.bind("Print", hl.dsp.exec_cmd("grim -g \"$(slurp)\" ~/Pictures/Screenshots/$(date +%Y%m%d_%H%M%S).png"))
+hl.bind("Print", hl.dsp.exec_cmd("grim -g \"$(slurp)\" - | tee ~/Pictures/Screenshots/$(date +%Y%m%d_%H%M%S).png | wl-copy --type image/png"))
 -- Ctrl+Print: active window
-hl.bind("CTRL + Print", hl.dsp.exec_cmd("grim -g \"$(hyprctl activewindow -j | jq -r '\"\\(.at[0]),\\(.at[1]) \\(.size[0])x\\(.size[1])'\")\" ~/Pictures/Screenshots/$(date +%Y%m%d_%H%M%S).png"))
+hl.bind("CTRL + Print", hl.dsp.exec_cmd("grim -g \"$(hyprctl activewindow -j | jq -r '\"\\(.at[0]),\\(.at[1]) \\(.size[0])x\\(.size[1])\"')\" - | tee ~/Pictures/Screenshots/$(date +%Y%m%d_%H%M%S).png | wl-copy --type image/png"))
 
 -- ── Scrolling layout navigation ───────────────────────────────
 -- Move focus left/right between columns

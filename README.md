@@ -52,9 +52,9 @@ A carefully crafted dotfiles setup that transforms Hyprland into a modern, cohes
 | **Alt + F** | Nautilus file manager |
 | **Alt + L** | 🔒 Lock screen (hyprlock) |
 | **Alt + Q** | Close window |
-| **Print** | 📐 Area screenshot |
-| **Shift + Print** | Full screenshot |
-| **Ctrl + Print** | Active window screenshot |
+| **Print** | 📐 Area screenshot → clipboard |
+| **Shift + Print** | Full screenshot → clipboard |
+| **Ctrl + Print** | Active window screenshot → clipboard |
 
 ### Scrolling Layout Navigation
 
