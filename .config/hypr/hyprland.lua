@@ -216,6 +216,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("systemctl --user start glpaper")
     hl.exec_cmd("clipboard-tray")
     hl.exec_cmd("hyprshell run")
+    hl.exec_cmd("hypridle")
 end)
 
 -- ── Load modules ─────────────────────────────────────────────
