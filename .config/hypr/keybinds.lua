@@ -23,7 +23,7 @@ hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("nautilus"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("hyprlauncher"))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("floorp"))
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("gtklock"))
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("gtklock -c ~/.config/gtklock/config.ini"))
 
 -- ── Window cycling ───────────────────────────────────────────
 hl.bind("ALT + Tab", function()
