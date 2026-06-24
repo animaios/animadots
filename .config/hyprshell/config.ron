@@ -7,7 +7,7 @@
         overview: (
             launcher: (
                 default_terminal: "alacritty",
-                launch_modifier: "ctrl",
+                launch_modifier: "super",
                 width: 650,
                 max_items: 5,
                 show_when_empty: true,
@@ -71,7 +71,7 @@
             exclude_workspaces: "special:.*",
         ),
         switch: (
-            modifier: "ctrl",
+            modifier: "super",
             key: "Tab",
             filter_by: [],
             switch_workspaces: false,

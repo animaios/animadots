@@ -23,7 +23,7 @@ hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("nautilus"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("hyprlauncher"))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("floorp"))
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("gtklock -c ~/.config/gtklock/config.ini"))
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 
 -- ── Window cycling ───────────────────────────────────────────
 hl.bind("ALT + Tab", function()
@@ -36,10 +36,10 @@ hl.bind("ALT + SHIFT + Tab", function()
     hl.dispatch(hl.dsp.layout("fit active"))
 end)
 -- ── Screenshots ──────────────────────────────────────────────
--- Print: full screen
-hl.bind("Print", hl.dsp.exec_cmd("grim ~/Pictures/Screenshots/$(date +%Y%m%d_%H%M%S).png"))
--- Shift+Print: area selection
-hl.bind("SHIFT + Print", hl.dsp.exec_cmd("grim -g \"$(slurp)\" ~/Pictures/Screenshots/$(date +%Y%m%d_%H%M%S).png"))
+-- Shift+Print: full screen
+hl.bind("SHIFT + Print", hl.dsp.exec_cmd("grim ~/Pictures/Screenshots/$(date +%Y%m%d_%H%M%S).png"))
+-- Print: area selection (default)
+hl.bind("Print", hl.dsp.exec_cmd("grim -g \"$(slurp)\" ~/Pictures/Screenshots/$(date +%Y%m%d_%H%M%S).png"))
 -- Ctrl+Print: active window
 hl.bind("CTRL + Print", hl.dsp.exec_cmd("grim -g \"$(hyprctl activewindow -j | jq -r '\"\\(.at[0]),\\(.at[1]) \\(.size[0])x\\(.size[1])'\")\" ~/Pictures/Screenshots/$(date +%Y%m%d_%H%M%S).png"))
 
