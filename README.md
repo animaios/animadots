@@ -46,7 +46,7 @@ A carefully crafted dotfiles setup that transforms Hyprland into a modern, cohes
 | **Alt + Shift** | 🔤 Switch keyboard layout (en/ru) |
 | **Alt + 1–0, -, =** | Switch to workspace A–L |
 | **Alt + Shift + 1–0, -, =** | Move window to workspace |
-| **Alt + T** | Kitty terminal |
+| **Alt + T** | Foot terminal |
 | **Alt + E** | Hyprlauncher |
 | **Alt + B** | Floorp browser |
 | **Alt + F** | Nautilus file manager |
