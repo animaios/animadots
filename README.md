@@ -1,7 +1,9 @@
 <div align="center">
-<img width="200" alt="AnimaDots" src="https://placehold.co/200x200/1a1a24/33ccff?text=AnimaDots&font=montserrat" />
 
-<h1>AnimaDots</h1>
+# [Anima](https://github.com/animaios/animacore)Dots
+
+<img width="256" height="384" alt="AnimAIOS mascot" src="https://github.com/user-attachments/assets/b87a9e6f-72a3-4103-9668-d1b6886f1b54" />
+
 <h3>Base UI for AnimAIOS — Hyprland, hyprshell, nwg-dock, gtklock</h3>
 
 </div>
