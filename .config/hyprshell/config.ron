@@ -71,7 +71,7 @@
             exclude_workspaces: "special:.*",
         ),
         switch: (
-            modifier: "super",
+            modifier: "ctrl",
             key: "Tab",
             filter_by: [],
             switch_workspaces: false,
