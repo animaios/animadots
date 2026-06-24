@@ -121,6 +121,29 @@ yay -S hyprshell-bin
 systemctl --user enable --now hyprshell.service
 ```
 
+
+### 🤖 Auto-login (no display manager)
+
+AnimaDots boots straight into Hyprland without typing a thing.
+
+**How it works:**
+1. **systemd `getty@tty1`** auto-logs in user `vi` on tty1 via a drop-in override
+2. **fish config** (`~/.config/fish/config.fish`) detects it's on tty1 with no Wayland session and auto-starts `Hyprland`
+
+**To set up on a fresh install:**
+```bash
+# 1. Create autologin override for tty1
+sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
+sudo tee /etc/systemd/system/getty@tty1.service.d/autologin.conf << 'EOF'
+[Service]
+ExecStart=
+ExecStart=-/usr/bin/agetty --autologin YOUR_USERNAME --noclear %I $TERM
+EOF
+sudo systemctl daemon-reload
+
+# 2. Fish auto-start is already in config.fish from the dotfiles
+```
+
 ## 🎨 Theming
 
 All configs use a consistent dark palette:
