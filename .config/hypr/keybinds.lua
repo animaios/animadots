@@ -16,7 +16,7 @@ for i, name in ipairs(workspace_names) do
 end
 
 -- ── Application launchers ────────────────────────────────────
-hl.bind(mainMod .. " + T", hl.dsp.exec_cmd("foot"))
+hl.bind(mainMod .. " + T", hl.dsp.exec_cmd("ghostty"))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch exit"))
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("nautilus"))
@@ -26,6 +26,9 @@ hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("floorp"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 
 -- ── Window cycling ───────────────────────────────────────────
+-- Alt+Tab cycles forward, Alt+Shift+Tab cycles backward
+hl.bind(mainMod .. " + Tab",         hl.dsp.window.cycle_next())
+hl.bind(mainMod .. " + SHIFT + Tab", hl.dsp.window.cycle_next({ prev = true }))
 
 -- ── Screenshots ──────────────────────────────────────────────
 -- Shift+Print: full screen
