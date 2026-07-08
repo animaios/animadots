@@ -44,7 +44,7 @@ hl.config({
         inactive_opacity = 1.0,
 
         shadow = {
-            enabled      = true,
+            enabled      = false,
             range        = 8,
             render_power = 3,
             color        = 0xaa1a1a1a,
@@ -54,7 +54,7 @@ hl.config({
         },
 
         blur = {
-            enabled            = true,
+            enabled            = false,
             size               = 8,
             passes             = 3,
             new_optimizations  = true,
@@ -207,14 +207,7 @@ hl.workspace_rule({ workspace = "f[1]s[false]",    gaps_out = 0, gaps_in = 0 })
 
 -- ── Autostart ────────────────────────────────────────────────
 hl.on("hyprland.start", function()
-    hl.exec_cmd("wlsunset -t 4500 -T 6500 -l 55.6256 -L 37.6064 -g 1.0")
-    hl.exec_cmd("wl-paste --type text --watch cliphist store")
-    hl.exec_cmd("wl-paste --type image --watch cliphist store")
     hl.exec_cmd("vibepanel")
-    hl.exec_cmd("nwg-dock-hyprland -d -x -p bottom -l overlay -a center -i 48 -hd 0 -nolauncher -s hyprland-1.css")
-    hl.exec_cmd("swaync -c /home/vi/.config/swaync/hyprland.json -s /home/vi/.config/swaync/hyprland-1.css")
-    hl.exec_cmd("systemctl --user start glpaper")
-    hl.exec_cmd("clipboard-tray")
     hl.exec_cmd("hyprshell run")
     hl.exec_cmd("hypridle")
 end)

@@ -22,7 +22,7 @@ hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("nautilus"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("hyprlauncher"))
-hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("floorp"))
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("firefox"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 
 -- ── Window cycling ───────────────────────────────────────────
