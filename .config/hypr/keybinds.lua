@@ -42,6 +42,9 @@ hl.bind("CTRL + Print", hl.dsp.exec_cmd("grim -g \"$(hyprctl activewindow -j | j
 -- Move focus left/right between columns
 hl.bind(mainMod .. " + Left",  hl.dsp.layout("focus l"))
 hl.bind(mainMod .. " + Right", hl.dsp.layout("focus r"))
+-- Move focus up/down between windows in the same column
+hl.bind(mainMod .. " + Up",    hl.dsp.focus({ direction = "up" }))
+hl.bind(mainMod .. " + Down",  hl.dsp.focus({ direction = "down" }))
 
 -- Swap current column with neighbor
 hl.bind(mainMod .. " + SHIFT + Left",  hl.dsp.layout("swapcol l"))
