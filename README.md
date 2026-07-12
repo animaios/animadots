@@ -4,7 +4,7 @@
 
 <img width="256" height="384" alt="AnimAIOS mascot" src="https://github.com/user-attachments/assets/b87a9e6f-72a3-4103-9668-d1b6886f1b54" />
 
-<h3>Base UI for AnimAIOS — Hyprland, hyprshell, nwg-dock, hyprlock</h3>
+<h3>Base UI for AnimAIOS — Hyprland, hyprshell, hyprlock</h3>
 
 </div>
 
@@ -16,7 +16,6 @@ A carefully crafted dotfiles setup that transforms Hyprland into a modern, cohes
 
 - **🐧 Hyprland 0.55+** — Lua config with scrolling layout, smooth animations, smart gaps
 - **🪟 hyprshell** — GTK4 window switcher & overview on Super key (like GNOME Overview)
-- **📋 nwg-dock** — Dash-to-Dock-style autohide dock with running app indicators
 - **🔒 hyprlock** — Dark themed lockscreen matching the setup
 - **🎨 Cohesive Dark Theme** — Deep dark transparency, blue accent (#33ccff), rounded corners everywhere
 - **🧩 Scrolling Layout** — Modern window management with column-based navigation
@@ -33,7 +32,6 @@ A carefully crafted dotfiles setup that transforms Hyprland into a modern, cohes
 | `hypridle.conf` | Idle timer template (hypridle) |
 | `hyprshell/config.ron` | Window switcher & overview config |
 | `hyprshell/styles.css` | Window switcher CSS theme |
-| `nwg-dock-hyprland/hyprland-1.css` | Dash-to-Dock bottom dock CSS |
 | `hyprlock.conf` | Lockscreen config |
 
 
@@ -42,13 +40,14 @@ A carefully crafted dotfiles setup that transforms Hyprland into a modern, cohes
 | Key | Action |
 |---|---|
 | **Super** (alone) | 🪟 hyprshell window overview |
-| **Super + Tab** | ↔️ hyprshell window switch |
-| **Alt + Shift** | 🔤 Switch keyboard layout (en/ru) |
+| **Alt + Tab** | 🆕 Native window switch |
+| **Ctrl + Tab** | ↔️ hyprshell window switch |
+| **Alt + Shift** | 🔤 Switch keyboard layout |
 | **Alt + 1–0, -, =** | Switch to workspace A–L |
 | **Alt + Shift + 1–0, -, =** | Move window to workspace |
-| **Alt + T** | Foot terminal |
+| **Alt + T** | Ghostty terminal |
 | **Alt + E** | Hyprlauncher |
-| **Alt + B** | Floorp browser |
+| **Alt + B** | Firefox browser |
 | **Alt + F** | Nautilus file manager |
 | **Alt + L** | 🔒 Lock screen (hyprlock) |
 | **Alt + Q** | Close window |
