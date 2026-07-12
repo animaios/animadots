@@ -1,6 +1,14 @@
 -- Hyprland Lua config — Hyprland 0.55+
 -- Main entry point. Splits config into modules via require().
 
+-- ── Autostart ────────────────────────────────────────────────
+hl.on("hyprland.start", function()
+    hl.exec_cmd("vibepanel")
+    hl.exec_cmd("hyprshell run")
+    hl.exec_cmd("hypridle")
+    hl.exec_cmd("easyeffects -w --service-mode")
+end)
+
 -- ── Environment ──────────────────────────────────────────────
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
@@ -204,13 +212,6 @@ hl.config({
 -- Remove gaps and borders when only one window is visible
 hl.workspace_rule({ workspace = "w[tv1]s[false]", gaps_out = 0, gaps_in = 0 })
 hl.workspace_rule({ workspace = "f[1]s[false]",    gaps_out = 0, gaps_in = 0 })
-
--- ── Autostart ────────────────────────────────────────────────
-hl.on("hyprland.start", function()
-    hl.exec_cmd("vibepanel")
-    hl.exec_cmd("hyprshell run")
-    hl.exec_cmd("hypridle")
-end)
 
 -- ── Load modules ─────────────────────────────────────────────
 require("keybinds")
