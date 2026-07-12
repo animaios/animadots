@@ -73,7 +73,7 @@ input = {
 ```
 
 Common layout codes: `us`, `ru`, `de`, `fr`, `uk`, `jp`, `br`, `il`, `ara`.
-Change `grp:alt_shift_toggle` to any [XKB group switch option](https://wiki.archlinux.org/title/X keyboard extension#Switching_between_keyboard_layouts)
+Change `grp:alt_shift_toggle` to any [XKB group switch option](https://wiki.archlinux.org/title/X%20keyboard%20extension)
 (e.g. `grp:win_space_toggle` for Win+Space).
 
 
