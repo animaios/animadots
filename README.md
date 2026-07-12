@@ -1,6 +1,6 @@
 <div align="center">
 
-# [Anima](https://github.com/animaios/animacore)Dots
+# [Anima](https://github.com/animaios/animacore)[UI](https://github.com/animaios/animaui) - Dots
 
 <img width="256" height="384" alt="AnimAIOS mascot" src="https://github.com/user-attachments/assets/b87a9e6f-72a3-4103-9668-d1b6886f1b54" />
 
