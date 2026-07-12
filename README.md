@@ -10,7 +10,7 @@
 
 ---
 
-A carefully crafted dotfiles setup that transforms Hyprland into a modern, cohesive desktop experience. Built to serve as the visual foundation for [AnimAIOS](https://github.com/animaios/animacore) — the agentic AI desktop OS.
+A carefully crafted dotfiles setup that transforms Hyprland into a modern, cohesive desktop experience.
 
 ## ✨ Features
 
@@ -19,7 +19,7 @@ A carefully crafted dotfiles setup that transforms Hyprland into a modern, cohes
 - **🔒 hyprlock** — Dark themed lockscreen matching the setup
 - **🎨 Cohesive Dark Theme** — Deep dark transparency, blue accent (#33ccff), rounded corners everywhere
 - **🧩 Scrolling Layout** — Modern window management with column-based navigation
-- **🐾 Anima-ready** — Built to coexist with [AnimAIOS](https://github.com/animaios/animacore) desktop companion
+- **🐾 Anima-ready** — Built to coexist with [Anima](https://github.com/animaios/animacore) desktop companion
 
 ## 🖥️ What's Inside
 
