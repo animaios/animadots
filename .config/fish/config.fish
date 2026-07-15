@@ -8,3 +8,5 @@ end
 
 set -g fish_greeting
 fastfetch
+starship init fish | source
+starship init fish | source

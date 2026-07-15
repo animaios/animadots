@@ -23,6 +23,8 @@ hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("nautilus"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("hyprlauncher"))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("firefox"))
+hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("chromium-browser-unstable"))
+hl.bind(mainMod .. " + G", hl.dsp.exec_cmd("chromium-browser-unstable --app=https://www.google.com?udm=50"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 
 -- ── Window cycling ───────────────────────────────────────────

@@ -6,7 +6,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("vibepanel")
     hl.exec_cmd("hyprshell run")
     hl.exec_cmd("hypridle")
-    hl.exec_cmd("easyeffects -w --service-mode")
+--    hl.exec_cmd("easyeffects -w --service-mode")
 end)
 
 -- ── Environment ──────────────────────────────────────────────
