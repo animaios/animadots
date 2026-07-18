@@ -29,9 +29,10 @@ hl.bind(mainMod .. " + G", hl.dsp.exec_cmd("chromium-browser-unstable --app=http
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 
 -- ── Window cycling ───────────────────────────────────────────
--- Alt+Tab cycles forward, Alt+Shift+Tab cycles backward
-hl.bind(mainMod .. " + Tab",         hl.dsp.window.cycle_next())
-hl.bind(mainMod .. " + SHIFT + Tab", hl.dsp.window.cycle_next({ prev = true }))
+-- Retired: delegated to hyprshell switch (Alt+Tab, modifier "alt"/key "Tab").
+-- NOTE: this dropped Alt+Shift+Tab (backward cycle); hyprshell has no Shift variant.
+-- hl.bind(mainMod .. " + Tab",         hl.dsp.window.cycle_next())
+-- hl.bind(mainMod .. " + SHIFT + Tab", hl.dsp.window.cycle_next({ prev = true }))
 
 -- ── Screenshots ──────────────────────────────────────────────
 -- Shift+Print: full screen
