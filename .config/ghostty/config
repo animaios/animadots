@@ -1,0 +1,5 @@
+# Custom scroll controls
+keybind = ctrl+up=scroll_page_lines:-1
+keybind = ctrl+down=scroll_page_lines:1
+keybind = ctrl+page_up=scroll_page_up
+keybind = ctrl+page_down=scroll_page_down
